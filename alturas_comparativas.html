@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alturas comparativas</title>
+    <link rel="stylesheet" href="alturas_comparativas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="alturas_comparativas.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_alturas_comparativas|-->
+    <!----------------------------------------->
+    <div class="contenedor_alturas">
+
+        <!--==============================-->
+        <!--|encabezado_alturas|-->
+        <!--==============================-->
+        <header class="encabezado_alturas">
+            <h1>Alturas Comparativas</h1>
+            <p>Compara las alturas de dos personas fácilmente.</p>
+        </header>
+
+        <!--==============================-->
+        <!--|contenido_alturas|-->
+        <!--==============================-->
+        <main class="contenido_alturas">
+
+            <!--==============================-->
+            <!--|panel_comparacion|-->
+            <!--==============================-->
+            <section class="panel_comparacion">
+
+                <div class="campo_altura">
+                    <h2>Persona 1</h2>
+
+                    <label for="nombre_uno">Nombre</label>
+                    <input type="text" id="nombre_uno" placeholder="Ej. Carlos">
+
+                    <label for="altura_uno">Altura en cm</label>
+                    <input type="number" id="altura_uno" placeholder="Ej. 175" min="1">
+                </div>
+
+                <div class="campo_altura">
+                    <h2>Persona 2</h2>
+
+                    <label for="nombre_dos">Nombre</label>
+                    <input type="text" id="nombre_dos" placeholder="Ej. Juan">
+
+                    <label for="altura_dos">Altura en cm</label>
+                    <input type="number" id="altura_dos" placeholder="Ej. 168" min="1">
+                </div>
+
+            </section>
+
+            <!--==============================-->
+            <!--|botones_alturas|-->
+            <!--==============================-->
+            <section class="botones_alturas">
+                <button id="boton_comparar">Comparar alturas</button>
+                <button id="boton_limpiar">Limpiar campos</button>
+            </section>
+
+            <!--==============================-->
+            <!--|resultado_alturas|-->
+            <!--==============================-->
+            <section class="resultado_alturas">
+                <h2>Resultado</h2>
+
+                <p id="mensaje_resultado">
+                    Ingresa las dos alturas para comenzar.
+                </p>
+
+                <div class="datos_resultado">
+
+                    <div class="dato_resultado">
+                        <span>Altura mayor</span>
+                        <strong id="altura_mayor">--</strong>
+                    </div>
+
+                    <div class="dato_resultado">
+                        <span>Diferencia</span>
+                        <strong id="diferencia_alturas">--</strong>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==============================-->
+            <!--|historial_alturas|-->
+            <!--==============================-->
+            <section class="historial_alturas">
+
+                <div class="titulo_historial">
+                    <h2>Historial</h2>
+                    <button id="boton_borrar_historial">
+                        Borrar historial
+                    </button>
+                </div>
+
+                <ul id="lista_historial">
+                </ul>
+
+            </section>
+
+        </main>
+
+        <!--==============================-->
+        <!--|pie_alturas|-->
+        <!--==============================-->
+        <footer class="pie_alturas">
+            <p>Proyecto frontend - Alturas Comparativas</p>
+        </footer>
+
+    </div>
+</body>
+</html>

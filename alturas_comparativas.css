@@ -1,0 +1,225 @@
+/*------------------------------*/
+/*--|estilos_generales|--*/
+/*------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4f8;
+    color: #243447;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+/*------------------------------*/
+/*--|contenedor_alturas|--*/
+/*------------------------------*/
+
+.contenedor_alturas {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border: 2px solid #c7d7e3;
+}
+
+/*------------------------------*/
+/*--|encabezado_alturas|--*/
+/*------------------------------*/
+
+.encabezado_alturas {
+    background: #5d9cc7;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.encabezado_alturas h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.encabezado_alturas p {
+    font-size: 16px;
+}
+
+/*------------------------------*/
+/*--|contenido_alturas|--*/
+/*------------------------------*/
+
+.contenido_alturas {
+    padding: 30px;
+}
+
+/*------------------------------*/
+/*--|panel_comparacion|--*/
+/*------------------------------*/
+
+.panel_comparacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.campo_altura {
+    background: #f4f8fb;
+    border: 1px solid #ccdce7;
+    padding: 20px;
+}
+
+.campo_altura h2 {
+    margin-bottom: 20px;
+    color: #3476a5;
+}
+
+.campo_altura label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo_altura input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aebfca;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.campo_altura input:focus {
+    outline: 2px solid #5d9cc7;
+}
+
+/*------------------------------*/
+/*--|botones_alturas|--*/
+/*------------------------------*/
+
+.botones_alturas {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.botones_alturas button {
+    border: none;
+    padding: 13px 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#boton_comparar {
+    background: #3f82b5;
+    color: #ffffff;
+}
+
+#boton_limpiar {
+    background: #d9e4eb;
+    color: #243447;
+}
+
+.botones_alturas button:hover {
+    opacity: 0.9;
+}
+
+/*------------------------------*/
+/*--|resultado_alturas|--*/
+/*------------------------------*/
+
+.resultado_alturas {
+    background: #eaf4fb;
+    border: 1px solid #bfd7e6;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.resultado_alturas h2 {
+    margin-bottom: 15px;
+}
+
+#mensaje_resultado {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.datos_resultado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.dato_resultado {
+    background: #ffffff;
+    border: 1px solid #c8dce8;
+    padding: 15px;
+}
+
+.dato_resultado span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.dato_resultado strong {
+    font-size: 22px;
+    color: #3476a5;
+}
+
+/*------------------------------*/
+/*--|historial_alturas|--*/
+/*------------------------------*/
+
+.historial_alturas {
+    border-top: 2px solid #d7e3eb;
+    padding-top: 25px;
+}
+
+.titulo_historial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#boton_borrar_historial {
+    border: none;
+    background: #c95f5f;
+    color: #ffffff;
+    padding: 11px 18px;
+    cursor: pointer;
+}
+
+#lista_historial {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#lista_historial li {
+    background: #f5f8fa;
+    border-left: 4px solid #5d9cc7;
+    padding: 13px;
+}
+
+/*------------------------------*/
+/*--|pie_alturas|--*/
+/*------------------------------*/
+
+.pie_alturas {
+    text-align: center;
+    padding: 20px;
+    background: #f1f5f7;
+    border-top: 1px solid #d4e0e7;
+    font-size: 14px;
+}
