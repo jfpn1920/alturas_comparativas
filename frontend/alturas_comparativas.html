@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alturas comparativas</title>
+    <link rel="stylesheet" href="alturas_comparativas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="alturas_comparativas.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_alturas_comparativas|-->
+    <!----------------------------------------->
+    <div class="contenedor_alturas">
+        <header class="encabezado_alturas">
+            <h1>Alturas Comparativas</h1>
+            <p>Compara las alturas de dos personas fácilmente.</p>
+        </header>
+        <!-------------------------------------->
+        <!--|estructuracion_contenido_alturas|-->
+        <!-------------------------------------->
+        <main class="contenido_alturas">
+            <section class="panel_comparacion">
+                <div class="campo_altura">
+                    <h2>Persona 1</h2>
+                    <label for="nombre_uno">Nombre:</label>
+                    <input type="text" id="nombre_uno" placeholder="Nombre de la persona">
+                    <label for="altura_uno">Altura en centímetros:</label>
+                    <input type="number" id="altura_uno" placeholder="Ej. 170" min="1" step="any">
+                </div>
+                <div class="campo_altura">
+                    <h2>Persona 2</h2>
+                    <label for="nombre_dos">Nombre:</label>
+                    <input type="text" id="nombre_dos" placeholder="Nombre de la persona">
+                    <label for="altura_dos">Altura en centímetros:</label>
+                    <input type="number" id="altura_dos" placeholder="Ej. 165" min="1" step="any">
+                </div>
+            </section>
+            <!--------------------->
+            <!--|botones_alturas|-->
+            <!--------------------->
+            <div class="botones_alturas">
+                <button type="button" id="boton_comparar">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    Comparar alturas
+                </button>
+                <button type="button" id="boton_limpiar">
+                    <i class="fa-solid fa-eraser"></i>
+                    Limpiar campos
+                </button>
+            </div>
+            <!----------------------->
+            <!--|resultado_alturas|-->
+            <!----------------------->
+            <section class="resultado_alturas">
+                <h2>Resultado de la comparación</h2>
+                <p id="mensaje_resultado">Ingresa las alturas para realizar la comparación.</p>
+                <div class="datos_resultado">
+                    <p>Persona más alta: <strong id="altura_mayor">-</strong></p>
+                    <p>Diferencia de alturas: <strong id="diferencia_alturas">-</strong></p>
+                </div>
+            </section>
+            <!----------------------->
+            <!--|historial_alturas|-->
+            <!----------------------->
+            <section class="historial_alturas">
+                <div class="encabezado_historial">
+                    <h2>Historial de comparaciones</h2>
+                    <button type="button" id="boton_borrar_historial">
+                        <i class="fa-solid fa-trash"></i>
+                        Borrar historial
+                    </button>
+                </div>
+                <ul id="lista_historial">
+                    <li>No hay comparaciones guardadas.</li>
+                </ul>
+            </section>
+        </main>
+        <!------------------->
+        <!--|pie_de_pagina|-->
+        <!------------------->
+        <footer class="pie_alturas">
+            <p>Alturas Comparativas &copy; 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
